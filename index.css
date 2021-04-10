@@ -1,55 +1,39 @@
-.outer-container{
-    background-image: radial-gradient(circle closest-side,rgb(172, 145, 157),rgb(109, 136, 35),grey);
-    width: 60%;
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border:2px solid blue;
+    margin: 50px;
+    transition: transform 2s;
+    
 }
-.card-container{
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
-    background-image:linear-gradient(45deg,skyblue,blue,rgb(172, 172, 133),
-    skyblue,green,grey ,rgba(219, 207, 196, 0)); 
+.div1:hover{
+    transform: translateX(45px);
 }
-.main-banner{
-    font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    text-shadow: 5px 6px 4px rgb(158, 40, 40);
-    background-image:linear-gradient(to right,skyblue, rgba(20, 118, 131, 0)),url('./Capture.PNG');
-    width: 719px;
-    height: 220px;
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid brown;
+    margin: 50px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
 }
-.offering-heading{
-    text-shadow: 4px 3px 2px rgb(150, 168, 48);
-    text-decoration: underline double orangered;
+.div2:hover{
+    transform: translateY(45px);
 }
 
-.price-card{
-    border: 2px solid blue;
-    border-radius: 5px;
-    border-width: 30%;
-    text-align: center;
-    padding: 2px;
-    margin: 2px;
-    background-color: aquamarine;
-    box-shadow: 10px 10px 2px lightseagreen;
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid crimson;
+    margin: 50px;
+    transition:transform 2s;
+    
 }
-.card-heading{
-    color: blue;
-}
-.card-description{
-    font-family: cursive;
-    letter-spacing: 0.5px;
-    font-size: large;
-}
-.card-price{
-    color: green;
-    text-decoration: line-through solid red;
-}
-.card-button{
-    color: blue;
-    background-color: orangered;
-    cursor: pointer;
-}
-.card-button:hover{
-    background-color: pink
+.div3:hover{
+    transform: translate(45px,45px);
 }
